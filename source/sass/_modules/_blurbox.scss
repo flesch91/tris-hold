@@ -10,6 +10,7 @@
   display: block;
   @media screen and (max-width: $max-width-lg) {
     height: 100% !important;
+    margin: 0 !important;
     top: 0;
     left: 0;
   }
