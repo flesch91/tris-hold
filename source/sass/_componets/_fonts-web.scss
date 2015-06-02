@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: normal;
+  font-style: normal;
+  src: url('segoeui-normal/segoeui.eot'); /* IE9 Compat Modes */
+  src: url('segoeui-normal/segoeui.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('segoeui-normal/segoeui.woff') format('woff'), /* Pretty Modern Browsers */
+  url('segoeui-normal/segoeui.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('segoeui-normal/segoeui.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Segoe UI light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('segoeui-light/segoeuil.eot'); /* IE9 Compat Modes */
+  src: url('segoeui-light/segoeuil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('segoeui-light/segoeuil.woff') format('woff'), /* Pretty Modern Browsers */
+  url('segoeui-light/segoeuil.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('segoeui-light/segoeuil.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

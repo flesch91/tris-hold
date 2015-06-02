@@ -1,0 +1,226 @@
+// Page hold
+// --------------
+
+$hold-page-title-color: #65c2ef !default;
+
+.container{
+  width: 380px;
+  margin: 0 auto;
+  padding-top: 50px;
+  @media screen and (max-width: $max-width-lg) {
+    width: auto;
+  }
+}
+.hold-page-global{overflow-x: hidden}
+.hold-page{
+  font-size: 18px;
+  text-align: center;
+  background: url("../../assets/images/hold-page-bg.png") center 180px no-repeat;
+  .wrapper{
+    position: relative;
+    z-index: 2;
+  }
+  .logo-site{
+    margin: 0 0 20px 0;
+  }
+  hr{
+    margin: 32px 0;
+    border: 0;
+    border-top: 1px solid #ebebeb;
+  }
+
+  &-title{
+    h1,
+    h2{
+      font-family: $font-family-light-sans-serif;
+      text-transform: uppercase;
+      color: $hold-page-title-color;
+      font-weight: normal;
+    }
+    h2{
+      font-size: 70px;
+      @media screen and (max-width: $max-width-lg) {
+        font-size: 40px;
+      }
+    }
+    h1{
+      font-size: 142px;
+      @media screen and (max-width: $max-width-lg) {
+        font-size: 90px;
+      }
+    }
+  }
+  &-link-find-out-more{
+    display: inline-block;
+  }
+  &-sing-up-form-input{
+    color: $hold-page-title-color;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $hold-page-title-color;
+    }
+    &:-moz-placeholder {
+      color: $hold-page-title-color;
+    }
+    &::-moz-placeholder {
+      color: $hold-page-title-color;
+    }
+    &:-ms-input-placeholder {
+      color: $hold-page-title-color;
+    }
+
+  }
+  &-sing-up-form-btn{
+    width: 154px;
+    height: 40px;
+    color: #fff;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #5fc5f9;
+    transition: all .2s ease;
+      &:hover,
+      &:active{
+        background-color: #5cb6e9;
+      }
+    @media screen and (max-width: $max-width-lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  // Popup with video
+  &-list-video{
+    margin: 0 0 110px;
+    padding: 0;
+    @media screen and (max-width: $max-width-lg) {
+      margin: 48px 0 0;
+    }
+    li{
+      position: relative;
+      margin: 0 30px;
+      display: inline-block;
+      @media screen and (max-width: $max-width-lg) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+    }
+    &-link{
+      position: relative;
+      display: block;
+      border: 1px solid #ebebeb;
+
+      @media screen and (max-width: $max-width-lg) {
+        border: none;
+      }
+    }
+    &-cover{
+      width: 265px;
+      height: 150px;
+      display: block;
+      background: center center no-repeat;
+      @media screen and (max-width: $max-width-lg) {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+      }
+    }
+    &-title-share-wr{
+      @media screen and (max-width: $max-width-lg) {
+        background-color: rgba(0,0,0,.4);
+        position: relative;
+        top: -35px;
+        height: 35px;
+        margin-bottom: -36px;
+      }
+    }
+    &-title{
+      font-size: 14px;
+      color: $hold-page-title-color;
+      text-align: left;
+      margin-top: 10px;
+      float: left;
+      @media screen and (max-width: $max-width-lg) {
+        font-size: 15px;
+        color: #fff;
+        padding-left: 15px;
+      }
+    }
+    &-share{
+      opacity: 0;
+      position: relative;
+      top: -5px;
+      margin-top: 3px;
+      font-size: 14px;
+      float: right;
+      transition: all .2s ease;
+        span{
+          margin-right: 8px;
+        }
+        a{
+          position: relative;
+          top: 5px;
+        }
+      @media screen and (max-width: $max-width-lg) {
+        margin-top: 5px;
+        padding-right: 15px;
+        a{
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+
+  &-list-video-hover{
+    opacity: 0;
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    margin-left: -25px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    transition: all .2s ease;
+      i{
+        margin-bottom: 10px
+      }
+    @media screen and (max-width: $max-width-lg){
+      top: 50%;
+      left: 50%;
+      margin-left: -28px;
+      margin-top: -31px;
+    }
+  }
+  &-list-video-hover-bg{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    transition: all .2s ease;
+  }
+  &-list-video li:hover &-list-video-share{
+    opacity: 1;
+    top: 0;
+  }
+  &-list-video li:hover &-list-video-hover-bg,
+  &-list-video li:hover &-list-video-hover{
+    opacity: 1;
+  }
+  @media screen and (max-width: $max-width-lg) {
+    &-list-video li &-list-video-share{
+      opacity: 1;
+      top: 0;
+    }
+    &-list-video li &-list-video-hover-bg,
+    &-list-video li &-list-video-hover{
+      opacity: 1;
+    }
+  }
+}

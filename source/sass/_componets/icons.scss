@@ -1,0 +1,41 @@
+.icon-play{
+  position: relative;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  background: url("icons/icon-play.png") center center no-repeat;
+}
+.icon-play-lg{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  background: url("icons/icon-play-lg.png") center center no-repeat;
+  @media screen and (max-width: $max-width-lg) {
+    width: 52px;
+    height: 36px;
+    background: url("icons/icon-play-lg-mob.png") center center no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+}
+.icon-twitter{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("icons/icon-twitter.png") center center no-repeat;
+}
+.icon-facebook{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("icons/icon-facebook.png") center center no-repeat;
+}
+.icon-google{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("icons/icon-google.png") center center no-repeat;
+}

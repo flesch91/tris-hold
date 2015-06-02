@@ -1,0 +1,75 @@
+
+@media screen and (max-width: $max-width-lg) {
+  .clouds{
+    display: none;
+  }
+}
+.clouds{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 990px;
+  left: 50%;
+  margin-left: -495px;
+  &.clouds-blur{
+    filter: blur(8px);
+  }
+}
+.cloud {
+  position: absolute;
+  transition: 500ms;
+}
+
+.x1 {
+  left: -10px;
+  top: 102px;
+  width: 112px;
+  height: 62px;
+  background: url("../../assets/images/cloud-1.png") left top no-repeat;
+  animation: moveclouds 65s linear infinite;
+}
+.x2 {
+  left: 292px;
+  top: 220px;
+  width: 162px;
+  height: 79px;
+  background: url("../../assets/images/cloud-2.png") left top no-repeat;
+  animation: moveclouds 50s linear infinite;
+}
+
+.x3 {
+  left: 30px;
+  top: 500px;
+  width: 137px;
+  height: 78px;
+  background: url("../../assets/images/cloud-3.png") left top no-repeat;
+  animation: moveclouds 58s linear infinite;
+}
+
+.x4 {
+  right: -40px; top: 95px;
+  width: 137px;
+  height: 78px;
+  background: url("../../assets/images/cloud-3.png") left top no-repeat;
+  animation: moveclouds-right 50s linear infinite;
+}
+
+.x5 {
+  right: -48px; top: 480px;
+  width: 162px;
+  height: 79px;
+  background: url("../../assets/images/cloud-2.png") left top no-repeat;
+  animation: moveclouds-right 40s linear infinite;
+}
+
+
+
+@keyframes moveclouds {
+  0%   {transform: translateX(1000px);}
+  100% {transform: translateX(-1000px);}
+}
+@keyframes moveclouds-right {
+  0%   {transform: translateX(-1000px);}
+  100% {transform: translateX(1000px);}
+}
+

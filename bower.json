@@ -1,0 +1,14 @@
+{
+  "name": "Tris",
+  "version": "0.1.0",
+  "main": "source/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "normalize-css": "=3.0.2",
+    "jquery": "2.0.0"
+  }
+}

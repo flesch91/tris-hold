@@ -1,0 +1,36 @@
+
+//## Settings for some of the most global styles.
+// Media query mob
+$max-width-lg: 990px;
+$max-width-md: 640px;
+$max-width-sm: 480px;
+
+//** Background color for `<body>`.
+$body-bg:               #fff;
+$body-padding-top:      0;
+
+//** Global text color on `<body>`.
+$text-color:            #cecece;
+
+//** Global textual link color.
+$link-color:            #cecece;
+$link-hover-color:      #a7a7a7;
+$link-hover-decoration: none;
+
+
+// Variables Typography
+// =======================
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  "Segoe UI",Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+$font-family-light-sans-serif:  "Segoe UI light",Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-base:        $font-family-sans-serif;
+$font-size-base:          16px;
+$line-height-base:        16px;
+
+// Hold page
+// =============
+
+$hold-page-title-color: #65c2ef;
